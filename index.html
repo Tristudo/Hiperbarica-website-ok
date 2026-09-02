@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CeReSoH | Centro de Renovación y Soluciones Hiperbáricas</title>
 
 <style>
@@ -11,149 +12,193 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f7fbfc;
-color:#163a4a;
-line-height:1.6;
+font-family:Arial, sans-serif;
+background:#f8fbfc;
+color:#123848;
 }
 
-header{
-background:linear-gradient(135deg,#e6fbff,#ffffff);
-padding:40px 20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+list-style:none;
+padding:15px;
+}
+
+nav a{
+text-decoration:none;
+color:#0c5d7a;
+font-weight:bold;
+padding:10px 15px;
+}
+
+nav a:hover{
+color:#e5679b;
+}
+
+section{
+padding:90px 8% 70px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
+background:linear-gradient(to bottom,#eafcff,#ffffff);
 }
 
 .logo{
-max-width:450px;
+max-width:500px;
 width:90%;
-margin-bottom:20px;
+margin-bottom:30px;
 }
 
 .hero h1{
-font-size:2.5rem;
-margin-bottom:10px;
-color:#0d5d7c;
+font-size:3rem;
+color:#0c5d7a;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:1.2rem;
 max-width:800px;
-margin:auto;
+font-size:1.2rem;
+line-height:1.7;
 }
 
 .btn{
 display:inline-block;
-margin-top:25px;
+margin-top:30px;
 background:#25D366;
 color:white;
 padding:15px 30px;
-text-decoration:none;
 border-radius:50px;
+text-decoration:none;
 font-weight:bold;
-transition:0.3s;
 }
 
 .btn:hover{
-background:#1ebc59;
-}
-
-section{
-padding:70px 10%;
+background:#1faa50;
 }
 
 h2{
 text-align:center;
-color:#0d5d7c;
 margin-bottom:30px;
+color:#0c5d7a;
 font-size:2rem;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 }
 
 .card{
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .card h3{
 margin-bottom:10px;
-color:#e7609a;
+color:#e5679b;
 }
 
 .pricing{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .price-box{
 background:white;
-padding:35px;
+padding:30px;
 border-radius:15px;
 text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 .price{
 font-size:2.5rem;
 font-weight:bold;
-color:#0d5d7c;
-margin:20px 0;
+color:#0c5d7a;
+margin:15px 0;
 }
 
-.location{
-text-align:center;
+.map-container{
+max-width:1000px;
+margin:auto;
 }
 
-.location iframe{
+.map-container iframe{
 width:100%;
-height:400px;
+height:450px;
 border:none;
 border-radius:15px;
-margin-top:20px;
 }
 
 .contact{
 text-align:center;
-background:#ffffff;
+}
+
+.whatsapp-button{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:15px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 15px rgba(0,0,0,.3);
 }
 
 footer{
-background:#0d5d7c;
+background:#0c5d7a;
 color:white;
 text-align:center;
 padding:25px;
 }
 
-.whatsapp-float{
-position:fixed;
-width:60px;
-height:60px;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-border-radius:50%;
-text-align:center;
-font-size:30px;
-line-height:60px;
-text-decoration:none;
-box-shadow:2px 2px 8px rgba(0,0,0,.3);
-z-index:100;
+@media(max-width:700px){
+
+.hero h1{
+font-size:2.2rem;
 }
 
-.highlight{
-color:#e7609a;
-font-weight:bold;
 }
 
 </style>
@@ -161,41 +206,36 @@ font-weight:bold;
 
 <body>
 
-<header>
+<nav>
+<ul>
+<li>#inicioInicio</a></li>
+<li>#beneficiosBeneficios</a></li>
+<li>#costosCostos</a></li>
+<li>#promocionesPromociones</a></li>
+<li>#ubicacionUbicación</a></li>
+<li>#contactoContacto</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="inicio">
 
 logo.png
-
-<div class="hero">
 
 <h1>La ciencia del bienestar</h1>
 
 <p>
-Recupera, revitaliza y fortalece tu bienestar mediante terapia hiperbárica
-en un entorno profesional, seguro y confortable.
+Centro de Renovación y Soluciones Hiperbáricas especializado
+en terapia hiperbárica para el bienestar, la recuperación y la
+oxigenación integral del organismo.
 </p>
 
 https://wa.me/525551389903
-Agendar cita por WhatsApp
+📱 Agendar cita
 </a>
-
-</div>
-
-</header>
-
-<section>
-
-<h2>¿Qué es la terapia hiperbárica?</h2>
-
-<p style="text-align:center;max-width:900px;margin:auto;">
-La terapia hiperbárica consiste en respirar oxígeno en un ambiente
-presurizado que favorece una mayor disponibilidad de oxígeno para diversos
-tejidos del organismo. Es utilizada como complemento dentro de diversos
-programas de bienestar y recuperación.
-</p>
 
 </section>
 
-<section>
+<section id="beneficios">
 
 <h2>Beneficios</h2>
 
@@ -203,29 +243,29 @@ programas de bienestar y recuperación.
 
 <div class="card">
 <h3>🌿 Bienestar Integral</h3>
-<p>Complemento para mejorar la sensación general de bienestar y vitalidad.</p>
+<p>Apoyo para mejorar calidad de vida y bienestar general.</p>
 </div>
 
 <div class="card">
 <h3>💨 Oxigenación</h3>
-<p>Favorece una mejor disponibilidad de oxígeno para los tejidos.</p>
+<p>Mayor disponibilidad de oxígeno para diversos tejidos.</p>
 </div>
 
 <div class="card">
 <h3>⚡ Recuperación</h3>
-<p>Apoyo complementario en procesos de recuperación física.</p>
+<p>Complemento para programas de recuperación física.</p>
 </div>
 
 <div class="card">
 <h3>🛡️ Atención Profesional</h3>
-<p>Servicio personalizado en un ambiente seguro y confortable.</p>
+<p>Servicio personalizado en un ambiente seguro.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section id="costos">
 
 <h2>Costos</h2>
 
@@ -234,99 +274,83 @@ programas de bienestar y recuperación.
 <div class="price-box">
 <h3>Sesión Individual</h3>
 <div class="price">$700</div>
-<p>Atención personalizada</p>
+<p>Por sesión</p>
 </div>
 
 <div class="price-box">
-<h3>Paquete de 10 Sesiones</h3>
+<h3>Paquete 10 Sesiones</h3>
 <div class="price">$6,000</div>
-<p>Ideal para programas continuos</p>
+<p>Mejor relación costo-beneficio</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section id="promociones">
 
 <h2>Promociones</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>🎁 Primera Sesión</h3>
-<p>Precio especial de <span class="highlight">$600 MXN</span>.</p>
+<h3>🎁 Primera Visita</h3>
+<p>$600 MXN primera sesión.</p>
 </div>
 
 <div class="card">
-<h3>👨‍👩‍👧‍👦 Promoción Familiar</h3>
-<p>10% de descuento al agendar dos o más integrantes.</p>
+<h3>👨‍👩‍👧‍👦 Familiar</h3>
+<p>10% de descuento para familiares.</p>
 </div>
 
 <div class="card">
-<h3>⭐ Paquetes Especiales</h3>
-<p>Consulta promociones vigentes para tratamientos continuos.</p>
+<h3>⭐ Paquetes</h3>
+<p>Consulta promociones vigentes.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
-
-<h2>Horarios</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Lunes a Viernes</h3>
-<p>8:00 AM - 8:00 PM</p>
-</div>
-
-<div class="card">
-<h3>Sábados y Domingos</h3>
-<p>9:00 AM - 2:00 PM</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="location">
+<section id="ubicacion">
 
 <h2>Ubicación</h2>
 
-<p>
-Av. La Fortuna 15<br>
-Tepeyac Insurgentes<br>
-Gustavo A. Madero<br>
-07020 Ciudad de México, CDMX
+<p style="text-align:center;margin-bottom:25px;">
+Av. La Fortuna 15, Tepeyac Insurgentes,<br>
+Gustavo A. Madero, 07020 Ciudad de México, CDMX
 </p>
 
-https://maps.google.com/maps?q=Av%20La%20Fortuna%2015%20Tepeyac%20Insurgentes%20CDMX&t=&z=15&ie=UTF8&iwloc=&output=embed
+<div class="map-container">
+
+https://www.google.com/maps?q=Av%20La%20Fortuna%2015%20Tepeyac%20Insurgentes%20CDMX&output=embed
 </iframe>
+
+</div>
 
 </section>
 
-<section class="contact">
+<section class="contact" id="contacto">
 
 <h2>Contáctanos</h2>
 
 <p><strong>WhatsApp:</strong> 55 5138 9903</p>
 
-<br>
+<p>
+Lunes a Viernes: 8:00 AM - 8:00 PM<br>
+Sábados y Domingos: 9:00 AM - 2:00 PM
+</p>
 
 https://wa.me/525551389903
-Solicitar Información
+📱 Enviar mensaje
 </a>
 
 </section>
 
 <footer>
 
-<p>
-© 2026 CeReSoH | Centro de Renovación y Soluciones Hiperbáricas
-</p>
+CeReSoH © 2026<br>
+Centro de Renovación y Soluciones Hiperbáricas
 
 </footer>
 
@@ -336,4 +360,3 @@ https://wa.me/525551389903
 
 </body>
 </html>
-
