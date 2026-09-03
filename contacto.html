@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CeReSoH | Contacto y Ubicación</title>
+
+<!-- SEO -->
+<meta name="description" content="Contacto de CeReSoH. Agenda tu sesión de terapia hiperbárica en CDMX. Ubicación, horarios y WhatsApp.">
+<meta name="keywords" content="contacto cámara hiperbárica, terapia hiperbárica CDMX, CeReSoH, salud">
+<meta property="og:title" content="CeReSoH | Contacto">
+<meta property="og:description" content="Agenda tu sesión de terapia hiperbárica.">
+<meta property="og:image" content="logo.png">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLW0DRHS43"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NLW0DRHS43');
+</script>
+
+<style>
+body{
+font-family:'Segoe UI', Roboto, Arial;
+background:#F4F7FB;
+color:#123848;
+padding:40px 8%;
+}
+
+h1{
+text-align:center;
+color:#123848;
+margin-bottom:20px;
+font-size:2.4rem;
+}
+
+.contact-box{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+.map-container iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:15px;
+}
+
+.back{
+display:inline-block;
+margin-top:30px;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.back:hover{
+background:#1faa50;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#25D366;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.2s;
+}
+
+.whatsapp-float img{
+width:40px;
+height:40px;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Contacto y Ubicación</h1>
+
+<div class="contact-box">
+<h2><i class="fab fa-whatsapp"></i> WhatsApp</h2>
+<p>55 5138 9903</p>
+
+<h2><i class="far fa-clock"></i> Horarios</h2>
+<p>Lunes a Viernes: 8:00 AM - 8:00 PM</p>
+<p>Sábados y Domingos: 9:00 AM - 2:00 PM</p>
+
+<h2><i class="fas fa-location-dot"></i> Dirección</h2>
+<p>Av. La Fortuna 15, Tepeyac Insurgentes,<br>Gustavo A. Madero, CDMX</p>
+</div>
+
+<div class="map-container">
+<iframe src="https://www.google.com/maps?q=Av%20La%20Fortuna%2015%20Tepeyac%20Insurgentes%20CDMX&output=embed"></iframe>
+</div>
+
+<a href="index.html" class="back"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+
+<a href="https://wa.me/525551389903" class="whatsapp-float" onclick="gtag('event','whatsapp_flotante_click');">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
