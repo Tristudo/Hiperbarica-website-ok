@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CeReSoH | Agendar Cita</title>
+
+<!-- SEO -->
+<meta name="description" content="Agenda tu sesión de terapia hiperbárica en CeReSoH. Formulario rápido y seguro.">
+<meta name="keywords" content="agendar cita hiperbárica, CeReSoH, terapia CDMX">
+<meta property="og:title" content="CeReSoH | Agendar Cita">
+<meta property="og:description" content="Formulario para agendar sesión.">
+<meta property="og:image" content="logo.png">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLW0DRHS43"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NLW0DRHS43');
+</script>
+
+<style>
+body{
+font-family:'Segoe UI', Roboto, Arial;
+background:#F4F7FB;
+color:#123848;
+padding:40px 8%;
+}
+
+h1{
+text-align:center;
+color:#123848;
+margin-bottom:20px;
+font-size:2.4rem;
+}
+
+.form-box{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+max-width:600px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:1rem;
+}
+
+button{
+background:#25D366;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+font-weight:bold;
+cursor:pointer;
+transition:.2s;
+}
+
+button:hover{
+background:#1faa50;
+transform:translateY(-2px);
+}
+
+.back-float{
+position:fixed;
+bottom:100px;
+right:20px;
+background:#E5679B;
+color:white;
+padding:12px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.2s;
+}
+
+.back-float:hover{
+transform:scale(1.05);
+background:#c94a7f;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#25D366;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.2s;
+}
+
+.whatsapp-float img{
+width:40px;
+height:40px;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Agendar Cita</h1>
+
+<div class="form-box">
+<form action="mailto:tu_correo@ejemplo.com" method="POST" enctype="text/plain">
+
+<label>Nombre completo</label>
+<input type="text" name="Nombre" required>
+
+<label>Teléfono</label>
+<input type="text" name="Telefono" required>
+
+<label>Fecha deseada</label>
+<input type="date" name="Fecha" required>
+
+<label>Comentarios</label>
+<textarea name="Comentarios" rows="4"></textarea>
+
+<button type="submit" onclick="gtag('event','agendar_cita_formulario');">
+  Enviar solicitud
+</button>
+
+</form>
+</div>
+
+<a href="index.html" class="back-float"><i class="fas fa-arrow-left"></i> Regresar</a>
+
+<a href="https://wa.me/525551389903" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
