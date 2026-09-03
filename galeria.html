@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CeReSoH | Galería de Instalaciones</title>
+
+<!-- SEO -->
+<meta name="description" content="Galería de instalaciones de CeReSoH. Cámara hiperbárica, sala de atención y ambiente clínico premium.">
+<meta name="keywords" content="galería cámara hiperbárica, clínica CeReSoH, terapia hiperbárica CDMX">
+<meta property="og:title" content="CeReSoH | Galería">
+<meta property="og:description" content="Conoce nuestras instalaciones.">
+<meta property="og:image" content="logo.png">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLW0DRHS43"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NLW0DRHS43');
+</script>
+
+<style>
+body{
+font-family:'Segoe UI', Roboto, Arial;
+background:#F4F7FB;
+color:#123848;
+padding:40px 8%;
+}
+
+h1{
+text-align:center;
+color:#123848;
+margin-bottom:20px;
+font-size:2.4rem;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.2s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.back{
+display:inline-block;
+margin-top:30px;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.back:hover{
+background:#1faa50;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#25D366;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.2s;
+}
+
+.whatsapp-float img{
+width:40px;
+height:40px;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Galería de Instalaciones</h1>
+
+<div class="gallery">
+<img src="foto1.jpg" alt="Cámara hiperbárica">
+<img src="foto2.jpg" alt="Sala de atención">
+<img src="foto3.jpg" alt="Área de bienestar">
+<img src="foto4.jpg" alt="Equipo médico">
+</div>
+
+<a href="index.html" class="back"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+
+<a href="https://wa.me/525551389903" class="whatsapp-float" onclick="gtag('event','whatsapp_flotante_click');">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
