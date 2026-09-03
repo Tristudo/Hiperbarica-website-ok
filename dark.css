@@ -1,0 +1,36 @@
+body{
+background:#0f1115;
+color:#e6e6e6;
+}
+
+section{
+border-bottom:1px solid #333;
+}
+
+.card, .price-box, .section-box, .form-box{
+background:#1a1d22;
+color:#e6e6e6;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+nav{
+background:#1a1d22;
+}
+
+nav a{
+color:#e6e6e6;
+}
+
+footer{
+background:#1a1d22;
+color:#e6e6e6;
+}
+
+.btn, .btn-section{
+background:#E5679B;
+color:white;
+}
+
+.whatsapp-float{
+background:#25D366;
+}
