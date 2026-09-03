@@ -6,23 +6,19 @@
 
 <title>CeReSoH | Agendar Cita</title>
 
-<!-- SEO -->
 <meta name="description" content="Agenda tu sesión de terapia hiperbárica en CeReSoH. Formulario rápido y seguro.">
 <meta name="keywords" content="agendar cita hiperbárica, CeReSoH, terapia CDMX">
 <meta property="og:title" content="CeReSoH | Agendar Cita">
-<meta property="og:description" content="Formulario para agendar sesión.">
 <meta property="og:image" content="logo.png">
 
-<!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLW0DRHS43"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NLW0DRHS43');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NLW0DRHS43');
 </script>
 
 <style>
@@ -87,6 +83,7 @@ text-decoration:none;
 font-weight:bold;
 box-shadow:0 0 15px rgba(0,0,0,.3);
 transition:.2s;
+z-index:999;
 }
 
 .back-float:hover{
@@ -107,6 +104,7 @@ align-items:center;
 background:#25D366;
 box-shadow:0 0 15px rgba(0,0,0,.3);
 transition:.2s;
+z-index:999;
 }
 
 .whatsapp-float img{
@@ -146,10 +144,12 @@ transform:scale(1.05);
 </form>
 </div>
 
-<a href="index.html" class="back-float"><i class="fas fa-arrow-left"></i> Regresar</a>
+<a href="index.html" class="back-float">
+<i class="fas fa-arrow-left"></i> Regresar
+</a>
 
 <a href="https://wa.me/525551389903" class="whatsapp-float">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
 </body>
