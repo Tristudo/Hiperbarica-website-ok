@@ -4,25 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CeReSoH | Precios y Paquetes de Terapia Hiperbárica</title>
+<title>CeReSoH | Precios y Paquetes</title>
 
-<!-- SEO -->
 <meta name="description" content="Precios de terapia hiperbárica en CeReSoH. Sesiones individuales, paquetes y membresías. Clínica premium en CDMX.">
-<meta name="keywords" content="precios cámara hiperbárica, terapia hiperbárica CDMX, CeReSoH, salud, bienestar">
-<meta property="og:title" content="CeReSoH | Precios de Terapia Hiperbárica">
-<meta property="og:description" content="Consulta precios y paquetes de terapia hiperbárica en CDMX.">
+<meta name="keywords" content="precios cámara hiperbárica, terapia hiperbárica CDMX, CeReSoH, salud">
+<meta property="og:title" content="CeReSoH | Precios">
 <meta property="og:image" content="logo.png">
 
-<!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLW0DRHS43"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NLW0DRHS43');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NLW0DRHS43');
 </script>
 
 <style>
@@ -38,12 +34,6 @@ text-align:center;
 color:#123848;
 margin-bottom:20px;
 font-size:2.4rem;
-}
-
-h2{
-color:#E5679B;
-margin-top:40px;
-margin-bottom:10px;
 }
 
 .price-box{
@@ -66,19 +56,24 @@ font-weight:bold;
 color:#123848;
 }
 
-.back{
-display:inline-block;
-margin-top:30px;
-background:#25D366;
+.back-float{
+position:fixed;
+bottom:100px;
+right:20px;
+background:#E5679B;
 color:white;
-padding:12px 25px;
+padding:12px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.2s;
+z-index:999;
 }
 
-.back:hover{
-background:#1faa50;
+.back-float:hover{
+transform:scale(1.05);
+background:#c94a7f;
 }
 
 .whatsapp-float{
@@ -94,6 +89,7 @@ align-items:center;
 background:#25D366;
 box-shadow:0 0 15px rgba(0,0,0,.3);
 transition:.2s;
+z-index:999;
 }
 
 .whatsapp-float img{
@@ -141,10 +137,12 @@ transform:scale(1.05);
 <p>10 sesiones al mes.</p>
 </div>
 
-<a href="index.html" class="back"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+<a href="index.html" class="back-float">
+<i class="fas fa-arrow-left"></i> Regresar
+</a>
 
-<a href="https://wa.me/525551389903" class="whatsapp-float" onclick="gtag('event','whatsapp_flotante_click');">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+<a href="https://wa.me/525551389903" class="whatsapp-float">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
 </body>
