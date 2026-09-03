@@ -6,13 +6,19 @@
 
 <title>CeReSoH | Hyperbaric Chamber Therapy in Mexico City</title>
 
-<meta name="description" content="CeReSoH: Premium hyperbaric chamber therapy in Mexico City. Wellness, oxygenation and recovery.">
+<!-- SEO -->
+<meta name="description" content="CeReSoH: Premium hyperbaric chamber therapy in Mexico City. Wellness, oxygenation and physical recovery.">
 <meta name="keywords" content="hyperbaric chamber Mexico City, hyperbaric therapy, wellness, oxygenation, CeReSoH">
+<meta name="author" content="CeReSoH">
 <meta property="og:title" content="CeReSoH | Hyperbaric Therapy">
+<meta property="og:description" content="Premium hyperbaric therapy center in Mexico City.">
 <meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
 
+<!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLW0DRHS43"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -22,13 +28,20 @@ gtag('config', 'G-NLW0DRHS43');
 </script>
 
 <style>
-body{
-font-family:'Segoe UI', Roboto, Arial;
-background:#F4F7FB;
-color:#123848;
-padding-top:80px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
+body{
+font-family:'Segoe UI', Roboto, Arial, sans-serif;
+background:#F4F7FB;
+color:#123848;
+}
+
+/* NAVBAR */
 nav{
 position:fixed;
 top:0;
@@ -36,40 +49,112 @@ width:100%;
 background:white;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
 z-index:1000;
-padding:15px;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:12px 20px;
 }
 
-nav img{
-height:45px;
+.nav-logo img{
+height:50px;
 }
 
-nav a{
-margin-left:15px;
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
 text-decoration:none;
 color:#123848;
-font-weight:bold;
+font-weight:600;
+padding:8px 12px;
+border-radius:8px;
+transition:.2s;
 }
 
+.nav-links a:hover{
+background:#E5679B;
+color:white;
+}
+
+/* Mobile menu */
+.menu-toggle{
+display:none;
+font-size:28px;
+color:#123848;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:white;
+flex-direction:column;
+width:75%;
+max-width:280px;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+display:none;
+}
+
+.nav-links.show{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+}
+
+/* SECTIONS */
 section{
 padding:120px 8% 100px;
 border-bottom:1px solid #e3e6ea;
 }
 
-h1{
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-font-size:2.6rem;
+background:linear-gradient(to bottom,#ffffff,#F4F7FB);
+animation:fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+.logo{
+max-width:350px;
+width:90%;
 margin-bottom:20px;
 }
 
-p{
-text-align:center;
+.hero h1{
+font-size:2.8rem;
+color:#123848;
+margin-bottom:15px;
+}
+
+.hero p{
 max-width:800px;
-margin:auto;
 font-size:1.2rem;
 line-height:1.7;
+color:#345;
 }
 
 .btn{
@@ -81,8 +166,80 @@ padding:15px 30px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+transition:.2s;
 }
 
+.btn:hover{
+background:#1faa50;
+transform:translateY(-2px);
+}
+
+/* TITLES */
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#123848;
+font-size:2rem;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#E5679B;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+/* MAP */
+.map-container{
+max-width:1000px;
+margin:auto;
+}
+
+.map-container iframe{
+width:100%;
+height:450px;
+border:none;
+border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+background:#123848;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+footer a{
+color:#E5679B;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* WhatsApp Floating Button */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -94,39 +251,184 @@ display:flex;
 justify-content:center;
 align-items:center;
 background:#25D366;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:.2s;
 }
 
 .whatsapp-float img{
 width:40px;
 height:40px;
 }
+
+.whatsapp-float:hover{
+transform:scale(1.05);
+}
 </style>
+
 </head>
 
 <body>
 
 <nav>
-<img src="logo.png" alt="CeReSoH">
-<div>
-<a href="index.html">Español</a>
+<div class="nav-container">
+  <div class="nav-logo">
+    <img src="logo.png" alt="CeReSoH">
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Español</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#promotions">Promotions</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="testimonios.html">Testimonials</a></li>
+    <li><a href="galeria.html">Gallery</a></li>
+  </ul>
 </div>
 </nav>
 
-<section>
+<section class="hero" id="home">
+
+<img src="logo.png" class="logo" alt="CeReSoH">
+
 <h1>The Science of Wellness</h1>
+
 <p>
 CeReSoH is a premium hyperbaric therapy center specializing in wellness,
 oxygenation and physical recovery.
 </p>
 
 <a href="https://wa.me/525551389903" class="btn">
-<i class="fab fa-whatsapp"></i> Book Appointment
+  <i class="fab fa-whatsapp"></i> Book Appointment
 </a>
+
 </section>
+
+<section id="benefits">
+
+<h2>Benefits</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3><i class="fas fa-leaf"></i> Wellness</h3>
+<p>Improves overall well-being and vitality.</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-lungs"></i> Oxygenation</h3>
+<p>Increases oxygen availability in tissues.</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-bolt"></i> Recovery</h3>
+<p>Supports physical recovery programs.</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-shield-heart"></i> Professional Care</h3>
+<p>Safe and personalized environment.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing">
+
+<h2>Pricing</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3><i class="fas fa-user"></i> Single Session</h3>
+<p><strong>$700 MXN</strong></p>
+<p>Per session</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-layer-group"></i> 10-Session Package</h3>
+<p><strong>$6,000 MXN</strong></p>
+<p>Best cost-benefit option</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="promotions">
+
+<h2>Promotions</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3><i class="fas fa-gift"></i> First Visit</h3>
+<p>$600 MXN first session</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-people-group"></i> Family</h3>
+<p>10% discount for family members</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-star"></i> Packages</h3>
+<p>Ask for current promotions</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="location">
+
+<h2>Location</h2>
+
+<p style="text-align:center;margin-bottom:25px;">
+Av. La Fortuna 15, Tepeyac Insurgentes,<br>
+Gustavo A. Madero, Mexico City
+</p>
+
+<div class="map-container">
+<iframe src="https://www.google.com/maps?q=Av%20La%20Fortuna%2015%20Tepeyac%20Insurgentes%20CDMX&output=embed"></iframe>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> +52 55 5138 9903</p>
+
+<p>
+<i class="far fa-clock"></i> Monday to Friday: 8:00 AM - 8:00 PM<br>
+<i class="far fa-clock"></i> Saturday & Sunday: 9:00 AM - 2:00 PM
+</p>
+
+</section>
+
+<footer>
+CeReSoH © 2026<br>
+Premium Hyperbaric Therapy Center
+</footer>
 
 <a href="https://wa.me/525551389903" class="whatsapp-float">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
+
+<script>
+function toggleMenu(){
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('show');
+}
+</script>
 
 </body>
 </html>
